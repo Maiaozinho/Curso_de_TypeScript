@@ -97,6 +97,13 @@ function showKm(km: Km){
 
 showKm(newTruck.km)
 
+const newCar = {
+    km:5000,
+    kg: 1000,
+}
+
+showKm(newCar.km)
+
 // 8 - condicional types
 interface A{}
 
@@ -111,15 +118,15 @@ type myType = B extends A ? number : string
 const someVar:myType = 5
 //const someVar:myType = "teste"
 
-type myTypeB = Teste extends {showNumber(): number} ? string : boolean
+type myTypeB = Teste extends {showNumber(): number } ? string : boolean
 
 // 9 - template literal types
-
 type testA = "text"
 
 type CustomType = `some ${testA}`
 
-//onst testing: CustomType = "some text 2"
+const testing: CustomType = "some text"
+// const testing2: CustomType = "some text 2"
 
 type a1 = "Testando"
 type a2 = "Union"

@@ -51,4 +51,10 @@ function showKm(km) {
     console.log(`O veiculos tem a km de ${km}`);
 }
 showKm(newTruck.km);
+const newCar = {
+    km: 5000,
+    kg: 1000,
+};
+showKm(newCar.km);
 const someVar = 5;
+const testing = "some text";
