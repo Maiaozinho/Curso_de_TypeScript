@@ -1,10 +1,11 @@
 // 3- componente
+
 import * as React from 'react';
 
 export interface IAppProps {
 }
 
-export default function App (props: IAppProps) {
+export function Botao (props: IAppProps) {
   return (
     <div>
       
