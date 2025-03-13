@@ -1,13 +1,12 @@
 // 3- componente
-import * as React from 'react';
+import React from 'react'
 
-export interface IAppProps {
-}
+type Props = {}
 
-export default function App (props: IAppProps) {
+function firstComponent({}: Props) {
   return (
-    <div>
-      
-    </div>
-  );
+    <div>Meu primeiro componente</div>
+  )
 }
+
+export default firstComponent

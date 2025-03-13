@@ -1,8 +1,10 @@
 import React from "react";
+// 4 - importação de componentes
+import firstComponent from "./components/firstComponent";
 
+// 5 - desestruturando props
+import secondComponent from "./components/secondComponent";
 function App() {
-
-
 
 // 1 - variaveis
 const name: string = "Maiao";
@@ -26,6 +28,8 @@ const UserGreeting = (name: string): string => {
       }
       <h3>{UserGreeting(name)}</h3>
       {/* <h3>{UserGreeting(age)}</h3> */}
+      <h3>firstComponent</h3>
+      <secondComponent name="maiao"/>
     </div>
   );
 }
